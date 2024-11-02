@@ -217,7 +217,8 @@ loops.  This variable is reset on each new paste.")
 
 
 (defvar webpaste--default-lang-alist
-  '((c-mode . "c")
+  '((ada-mode . "ada")
+    (c-mode . "c")
     (c++-mode . "cpp")
     (cmake-mode . "cmake")
     (css-mode . "css")
