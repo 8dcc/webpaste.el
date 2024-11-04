@@ -625,7 +625,7 @@ Takes optional POINT and MARK to paste a region."
   (interactive "r")
 
   ;; if region is selected
-  (if (region-active-p)
+  (if (use-region-p)
       ;; Paste selected region
       (webpaste-paste-region point mark)
     ;; Else, Paste buffer
