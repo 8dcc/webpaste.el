@@ -598,7 +598,7 @@ Argument MARK Current mark."
 
   ;; unless we wanted a paste confirmation and declined
   (unless (and webpaste-paste-confirmation
-               (not (yes-or-no-p "paste entire region?")))
+               (not (yes-or-no-p "Paste entire region? ")))
     ;; Extract the buffer contents with buffer-substring and paste it
     (webpaste--paste-text (buffer-substring point mark))))
 
@@ -613,7 +613,7 @@ Argument MARK Current mark."
 
   ;; unless we wanted a paste confirmation and declined
   (unless (and webpaste-paste-confirmation
-               (not (yes-or-no-p "paste entire buffer?")))
+               (not (yes-or-no-p "Paste entire buffer? ")))
     ;; Extract the buffer contents with buffer-substring and paste it
     (webpaste--paste-text (buffer-substring (point-min) (point-max)))))
 
